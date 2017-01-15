@@ -1,0 +1,1 @@
+json.partial! "todoos/todoo", todoo: @todoo

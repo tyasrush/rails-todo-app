@@ -1,0 +1,31 @@
+<%= form_for(@todoo) do |f| %>
+<% if @todoo.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@todoo.errors.count, "error") %> prohibited this todoo from being saved:</h2>
+
+  <ul>
+    <% @todoo.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div id="form-container">
+  <div class="field">
+    <p class: 'form-text-label'>Nama</p>
+    <%= f.text_field :name, class: 'form-text' %>
+  </div>
+  <div class="field">
+    <p class: 'form-text-label'>Waktu</p>
+    <%= f.date_select :time, class: 'form-text' %>
+  </div>
+  <div class="field">
+    <p class: 'form-text-label'>Prioritas</p>
+    <%= f.text_field :priority, class: 'form-text' %>
+  </div>
+  <div class="actions">
+    <%= f.submit @todoo.new_record? ? "Buat To Do" : "Perbarui To Do", class: 'btn-show-form' %>
+  </div>
+</div>
+<% end %>

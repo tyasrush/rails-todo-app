@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<ul id="parent-list">
+  <% @todoos.each do |todoo| %>
+  <li>
+    <a class="child-list-link" href="/todoos/<%= todoo.id %>">
+      <ul class="child-list">
+        <li class="title-item"><%= todoo.name %></li>
+        <li class="subtitle-item"><%= todoo.priority %> &#x2022; <td><%= todoo.time %></td></li>
+      </ul>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<%= button_to '+', new_todoo_path, id: 'fab', method: :get %>

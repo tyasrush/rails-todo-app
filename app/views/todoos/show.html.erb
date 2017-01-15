@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<ul id="show-item-container">
+  <li class="show-item-title"><strong><%= @todoo.name %></strong></li>
+  <li class="show-item-subtitle"><strong>Prioritas</strong> : <%= @todoo.priority %></li>
+  <li class="show-item-subtitle"><strong>Waktu</strong> : <%= @todoo.time %></li>
+</ul>
+
+<div class="show-button-container">
+  <%= button_to 'Edit', edit_todoo_path(@todoo), method: :get, class: 'btn-show' %>
+  <%= button_to 'Kembali', todoos_path, method: :get, class: 'btn-show' %>
+</div>

@@ -1,0 +1,1 @@
+json.array! @todoos, partial: 'todoos/todoo', as: :todoo
