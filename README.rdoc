@@ -1,8 +1,8 @@
 == RAILS TO DO APP
 
-Rails app independent i've made
-Still exploring rails api and ruby
-Feel free to clone this project
+Rails app independent i've made__
+Still exploring rails api and ruby__
+Feel free to clone this project__
 
 after clone, run :
 <tt>rake db:create</tt>.
