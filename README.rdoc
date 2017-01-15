@@ -1,28 +1,14 @@
-== README
+== RAILS TO DO APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails app independent i've made
+Still exploring rails api and ruby
+Feel free to clone this project
 
-Things you may want to cover:
+after clone, run :
+<tt>rake db:create</tt>.
 
-* Ruby version
+migrate database :
+<tt>rake db:migrate</tt>.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+run app :
+<tt>rails s</tt>.
