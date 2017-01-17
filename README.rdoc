@@ -13,7 +13,9 @@ migrate database :
 run app :
 <tt>rails s</tt>.
 
-##License
+
+## License
+
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                    Version 1, January 2017
