@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  get     'api/index'       => 'api#index'
+  get     'api/get/:id'     => 'api#get'
+  post    'api/create'      => 'api#create'
+  put     'api/update/:id'  => 'api#update'
+  delete  'api/delete/:id'  => 'api#delete'
+
   resources :todoos
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
