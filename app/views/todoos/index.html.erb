@@ -13,4 +13,6 @@
   <% end %>
 </ul>
 
-<%= button_to '+', new_todoo_path, id: 'fab', method: :get %>
+<%= link_to new_todoo_path, id: 'fab', method: :get do %>
+<%= content_tag(:h4, "+") %>
+<% end %>

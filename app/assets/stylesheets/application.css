@@ -86,11 +86,17 @@ li.subtitle-item {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  vertical-align: middle;
-  text-align: center;
   cursor: pointer;
   border: 0;
+  text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#fab h4 {
+  font-weight: normal;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
 }
 
 #fab:hover {
